@@ -28,8 +28,20 @@ if (isset($_POST["submit"])) {
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
     <title>SIRANAPLAKES</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="responsive.css" />
     
@@ -40,7 +52,6 @@ if (isset($_POST["submit"])) {
         <div class="header">
             <div class="container">
               <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                     <div class="full">
                     <body>
                         <div class="container">
@@ -51,21 +62,19 @@ if (isset($_POST["submit"])) {
                                 <a href="404.html">Contact</a>
                               </div>
                               <div class="top-wrapper">
-                              <img src="images/siranaplakes.png"style="width: 150px;px;height:150px; float: left;" aligh="middle" alt="#" >
+                              <img src="images/siranaplakes.png"style="width: 120px;px;height:120px; float: left;" aligh="middle" alt="#" >
                               </div>
                         </div>
-                     </body>
-                     </div>
-                  </div>
-                  
-               </div>
+                    </body>
+                    </div>
+              </div>
             </div>
-         </div>
+        </div>
       </header>
   <div class="top-wrapper">
     <div class="container">
       <form action="" method="post">
-        <br /> <br> <br>
+        <br /> <br> <br><br><br><br><br><br>
         <label for="fname">Nama Kelas Rawat:</label><br>
         <input type="text" id="fname"required="required" name="fname" /> <br /><br />
         <label for="lname">Jumlah Kamar:</label><br>

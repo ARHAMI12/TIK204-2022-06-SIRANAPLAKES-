@@ -83,6 +83,13 @@ mysqli_query($db, $query);
 return mysqli_affected_rows($db);
 
 }
+
+function logout ($data) {
+    session_start();
+    session_destroy();
+    header("Location: index.php");
+}
+
 ?>
 
 

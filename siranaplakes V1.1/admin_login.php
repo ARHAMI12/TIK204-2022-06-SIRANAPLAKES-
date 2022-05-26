@@ -1,33 +1,15 @@
 <?php
 require 'functions.php';
-if (isset($_POST["submit"])) { 
 
-
-    if( register ($_POST) > 0 ) {
-        echo "
-        <script>
-        alert('User Berhasil Ditambahkan. SILAHKAN MASUK!!');
-        document.location.href = 'index.php';
-        </script>
-        "; 
-    } else {
-        echo"<script>
-        alert('User Gagal Ditambahkan!!');
-        </script>
-        ";
-     }
-
-}
 
 if (isset($_POST["masuk"])) { 
     $username = $_POST["emailsignup"];
-    $nik=$_POST["nik"];
     $password = $_POST["passwordsignup"];
 
     $result = mysqli_query($db, "SELECT * FROM signup_data WHERE username='$emailsignup'");
-    
+        
     //cek username
-    if (mysqli_num_rows($result)===1) {
+    if (mysqli_num_rows($result)==1) {
         $row = mysqli_fetch_assoc($result);
         if( password_verify($password, $row["passwordsignup"])) {
             header("location: halaman_perawat.php");
@@ -78,7 +60,7 @@ if (isset($_POST["masuk"])) {
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form  action="" method="post">
+                            <form  action="halaman_perawat.php" method="post">
                                 <h1>Log in</h1> 
                                 <p> 
                                     <label for="username" class="uname"  > Join Account Rumah Sakit </label>
